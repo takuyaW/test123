@@ -20,11 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Extract tag name
-        id: get_version
-        run: echo "::set-output name=TAG_NAME::${GITHUB_REF#refs/tags/}"
-        
       - name: Publish to npm
-        run: npm publish --access public --tag ${{ steps.get_version.outputs.TAG_NAME }}
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM }}
