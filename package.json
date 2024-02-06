@@ -1,6 +1,6 @@
 {
     "name": "monaca-template-onsenui-v2-js-minimum",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "dependencies": {
         "cordova-custom-config": "5.1.0",
         "cordova-plugin-splashscreen": "5.0.2",
